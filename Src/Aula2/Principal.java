@@ -1,12 +1,22 @@
+import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
-    
-        Corrente corrente = new Corrente();
 
-        corrente.setNomecli("Rui Santiago Faria");
-        corrente.setCpfcli("123.456.789-00");
+        try (Scanner teclado = new Scanner(System.in)) {
+            //iniciando co o objeto da classe corrente
+            Corrente corrente = new Corrente();
 
-        corrente.abrirConta();
+            System.out.println("Digite o seu nome: ");
+            String nome = teclado.nextLine();
+            corrente.setNomecli(nome);
+
+            System.out.println("Digite o seu CPF: ");
+            String cpf = teclado.nextLine();
+            corrente.setCpfcli(cpf);
+
+            corrente.abrirConta();
+        }
 
     }
 }

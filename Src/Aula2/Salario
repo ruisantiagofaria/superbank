@@ -1,4 +1,4 @@
-public class Poupanca extends Conta implements IContas, ICliente {
+public class salario extends Conta implements IContas, ICliente {
 
     @Override
     public double saldo() {
@@ -20,12 +20,7 @@ public class Poupanca extends Conta implements IContas, ICliente {
       Corrente corr = new Corrente();
     
       corr.setNumbank(101);
-      corr.setNumero(10.115);
-      
+      corr.setNumero(10.114);
+      corr.getSaldo();
     
     }
-
-
-    
-
-}

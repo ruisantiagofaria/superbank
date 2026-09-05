@@ -1,0 +1,6 @@
+public abstract class IAuto{
+    
+    public abstract double acelerar (double valor);
+    public abstract double parar (double valor);
+    public abstract int Trocarmarcha (int valor);
+}

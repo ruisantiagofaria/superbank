@@ -1,8 +1,9 @@
 class Corrente extends Conta {
 
+   private String Nomecli;
+   private String Cpfcli;
 
-private String Nomecli;
-private String Cpfcli;
+
 
     public double saldo(double saldo) {
     return saldo;
@@ -21,11 +22,6 @@ private String Cpfcli;
       this.setNumbank(101);
             this.setNumero(10.114);
 
-            //Dados cliente
-            System.out.println("Sua conta do banco é: " + this.getNumbank() +
-              "\n Sua conta corrente é: " + this.getNumero() +
-              "\n Nome do cliente: " + this.getNomecli() +
-              "\n CPF do cliente: " + this.getCpfcli());
            
 
     }
